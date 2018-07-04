@@ -3,7 +3,6 @@ from pysrt import SubRipFile, SubRipItem
 
 
 def main():
-	# Initialize 
 	vtt , srt , index = webvtt.read(sys.argv[1]) , SubRipFile() , 0
 	for block in vtt:
 		srt.append(SubRipItem(index, start=block.start, end=block.end, text=block.text))
