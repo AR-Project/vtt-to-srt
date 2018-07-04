@@ -6,3 +6,5 @@ USAGE :
 python vtt-to-srt.py <file.vtt>
 
 It will generate srt output with same filename.
+
+NOTE : You need to install pysrt and webvtt module first.
